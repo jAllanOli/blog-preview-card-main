@@ -13,21 +13,34 @@
     />
 
     <title>Frontend Mentor | Blog preview card</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet/less" type="text/css" href="/styles.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
   </head>
   <body>
-    <main>
-      <img src="./assets/images/illustration-article.svg" alt="" />
-      <div>Learning</div>
-      <p>Published 21 Dec 2023</p>
-      <h1>HTML & CSS foundations</h1>
-      <p>
-        These languages are the backbone of every website, defining structure,
-        content, and presentation.
-      </p>
-      <div>
-        <img src="./assets/images/image-avatar.webp" alt="" />
-        <p>Greg Hooper</p>
+    <main class="card">
+      <img
+        class="card__image"
+        src="./assets/images/illustration-article.svg"
+        alt="shapes"
+      />
+
+      <div class="card__content">
+        <div class="card__tag">Learning</div>
+        <p class="card__date">Published 21 Dec 2023</p>
+        <h1 class="card__title">HTML & CSS foundations</h1>
+        <p class="card__description">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+      </div>
+
+      <div class="author-info">
+        <img
+          class="author-info__photo"
+          src="./assets/images/image-avatar.webp"
+          alt="alexander frost face"
+        />
+        <p class="author-info__name">Greg Hooper</p>
       </div>
     </main>
   </body>
